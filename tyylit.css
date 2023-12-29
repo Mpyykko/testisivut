@@ -1,0 +1,107 @@
+body {
+    font-family: Rubik, sans-serif;
+}
+
+body {
+    background-image:url("kuvia/tausta2.jpg");
+    background-color: #333;
+    background-size:cover; /* Tämä varmistaa, että taustakuva peittää koko taustan */
+    background-position: center; /* Tämä keskittää kuvan vaakasuunnassa */
+    background-repeat: no-repeat; /* Tämä estää kuvan toistamisen */
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+
+    overflow: hidden;
+    /*
+    display: grid;
+    place-items: center;*/
+
+    img {
+        max-width: 100%;
+      }
+}
+
+.keskitetty{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.keskitetty_nappi{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.keskitetty_paallekkain{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.navigointivalikko {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.navigointivalikko ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.navigointivalikko li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+.navigointivalikko a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navigointivalikko a:hover{
+    color: rgb(109, 159, 220);
+}
+
+.linkki {
+    display: block;
+    margin-bottom: 30px; /* Voit lisätä marginaalin linkkien väliin */
+  }
+
+  .marginaali {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .tyhja_tila {
+    height: 50px;
+
+  }
+.taulukko{
+    width: 30%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+.taulukko td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: white;
+}
+.taulukko th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #787676;;
+}
