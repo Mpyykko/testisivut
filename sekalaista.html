@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     
     <link rel="stylesheet" href="tyylit.css">
-    <title>Aloitussivu</title>
+    <title>Sekalaista</title>
+    
     
 </head>
 
@@ -25,16 +26,54 @@
 
     <div class="tyhja_tila"></div>
     <h2 class="keskitetty"> Tänne kaikenlaista muuta</h2>
+    <div class="tyhja_tila"></div>
+    
     <div class="keskitetty_nappi">
+        <div class=" "elementti>
 
-
+        <p>Painike</p>
         <button type="button" onclick="tulostaViesti()">Älä paina tästä!</button>
         <script>
             function tulostaViesti() {
                 alert("Pitikö mennä painamaan :)");
         }
         </script>
-</div>  
+
+        <div class="tyhja_tila"></div>
+
+        <p> Kokeile erilaisia taustakuvia</p>
+        <select onchange="vaihdaTaustakuva(this)"> 
+            <option value="kuvia/tausta2.jpg">Oletus</option>
+            <option value="kuvia/tausta1.jpg">Blue</option>
+            <option value="kuvia/black.png">Black</option>
+            <option value="kuvia/sun.jpg">Beach</option>
+            <option value="kuvia/green_smoke.jpg">Green</option>
+            
+        </select>
+
+        <script>
+            function vaihdaTaustakuva(valinta) {
+                var valittuKuva = valinta.value;
+                document.body.style.backgroundImage = "url('" + valittuKuva + "')";
+
+                if (valittuKuva === "kuvia/black.png") {
+                  vaihdaTekstinVari("#fff");
+                } 
+                else {
+                  vaihdaTekstinVari("#000"); 
+              }
+            }
+
+            function vaihdaTekstinVari(vari) {
+              document.body.style.color = vari;
+              document.querySelector('h1').style.color = vari;
+
+            
+            }
+        </script>   
+        
+    </div>
+</div> 
 <footer>
 </footer>  
 

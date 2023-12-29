@@ -5,13 +5,14 @@ body {
 body {
     background-image:url("kuvia/tausta2.jpg");
     background-color: #333;
-    background-size:cover; /* Tämä varmistaa, että taustakuva peittää koko taustan */
-    background-position: center; /* Tämä keskittää kuvan vaakasuunnassa */
-    background-repeat: no-repeat; /* Tämä estää kuvan toistamisen */
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
     margin: 0px;
     padding: 0px;
     height: 100vh;
     width: 100%;
+    transition: background 0.8s ease;
 
     overflow: hidden;
     /*
@@ -74,7 +75,7 @@ body {
 
 .linkki {
     display: block;
-    margin-bottom: 30px; /* Voit lisätä marginaalin linkkien väliin */
+    margin-bottom: 30px;
   }
 
   .marginaali {
@@ -104,4 +105,9 @@ body {
     text-align: left;
     padding: 8px;
     background-color: #787676;;
+}
+
+.elementti {
+    display: block;
+    margin-bottom: 20px;
 }
