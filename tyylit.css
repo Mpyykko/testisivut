@@ -123,23 +123,76 @@ body {
 cursor: pointer;
 }
 
-ul.submenu {
-    position: absolute;
-    top: 100%;
+.galleria {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+
+
+}
+.galleria img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-right: 10px;
+}
+.galleria img:last-child {
+    margin-right: 0;
+}
+
+.galleria img:hover {
+    transform: scale(1.1);
+}
+
+.suurenna {
+    position: fixed;
+    top: 0;
     left: 0;
-    background-color: #333;
-    display: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
 }
 
-li:hover > ul.submenu {
-    display: block;
+.suurenna img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-ul.submenu li {
-    margin: 0;
+.suurenna.active {
+    visibility: visible;
+    opacity: 1;
+}
+.suurenna-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
 }
 
-ul.submenu a {
-    padding: 10px;
+.suurenna-nav img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
 }
+
+.suurenna-nav img:hover {
+    opacity: 1;
+}
+
