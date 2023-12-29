@@ -14,8 +14,9 @@ body {
     width: 100%;
     transition: background 0.8s ease;
 
-    overflow: hidden;
+    
     /*
+    overflow: hidden;
     display: grid;
     place-items: center;*/
 
@@ -108,6 +109,37 @@ body {
 }
 
 .elementti {
-    display: block;
+    
     margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.keskitetty_teksti{
+    text-align: center;
+}
+.nappi{
+
+cursor: pointer;
+}
+
+ul.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li:hover > ul.submenu {
+    display: block;
+}
+
+ul.submenu li {
+    margin: 0;
+}
+
+ul.submenu a {
+    padding: 10px;
 }
