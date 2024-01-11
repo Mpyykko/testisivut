@@ -1,0 +1,41 @@
+@media only screen and (max-width: 800px){
+    .navigointivalikko {
+        display: block;
+        float: none;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        clear: both;
+        padding: 0;
+        
+    }
+    
+    .navigointivalikko ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+    }
+    
+    .navigointivalikko li {
+        display: block;
+        margin-right: 15px;
+    }
+   
+
+    .swiper {
+        height: 50vh;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 20px;
+    }
+
+
+
+
+
+
+
+
+}
