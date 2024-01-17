@@ -13,9 +13,22 @@
 </head>
 
 <body>
-    <style> h2{
-        color: white;
-    }</style>
+    
+  
+    <style>
+    #pyorivaKuva {
+            cursor: pointer;
+            position: relative;      
+        }
+
+        #pyorivaKuva img {
+            width: 200px; /* Muuta tarpeidesi mukaan */
+            transform-origin: center center; /* Aseta rotaatiopiste kuvan keskelle */
+            margin: 0;
+            padding: 0;
+           
+        }
+    </style>
     
     <nav class="navigointivalikko" >
         <ul>
@@ -23,18 +36,46 @@
             <li><a href=linkkeja.html>Linkkejä</a></li>
             <li><a href=sekalaista.html>Sekalaisia</a></li>
             <li><a href=kuva.html>Kuvagalleria 1</a></li>
-            <li><a href=kuva2.html>Kuvagalleria 2</a></li>
         </ul>
     </nav>
 
 
+    <div class="keskitetty">
+    <h2>Näillä sivuilla olisi tarkoitus opetella nettisivujen tekoa ja testailla kaikenlaisia elementtejä </h2>
+    </div>
     <div class="tyhja_tila"></div>
-    <h2 class="keskitetty">Näillä sivuilla olisi tarkoitus opetella nettisivujen tekoa ja testailla kaikenlaisia elementtejä </h2>
+ 
+    <div class="keskitetty" id="pyorivaKuva" onclick="toggleRotation()">
+        <img id="kuva" src="Omia kuvia/pyora2.png" alt="Pyörivä kuva">
+    </div>
 
-    </div>  
+    <script>
+        let rotaatioKaynnissa = true;
+        let rotaatio = 0;
+        let rotationInterval;
+    
+        window.onload = function () {
+            rotationInterval = setInterval(function () {
+                if (rotaatioKaynnissa) {
+                    rotaatio += 1;
+                    document.getElementById("kuva").style.transform = "rotate(" + rotaatio + "deg)";
+                }
+            }, 15);
+        };
+    
+        function toggleRotation() {
+            clearInterval(rotationInterval);
+            if (!rotaatioKaynnissa) {
+                rotationInterval = setInterval(function () {
+                    rotaatio += 1;
+                    document.getElementById("kuva").style.transform = "rotate(" + rotaatio + "deg)";
+                }, 15);
+            }
+            rotaatioKaynnissa = !rotaatioKaynnissa;
+        }
+    </script>
 
-   
-   
+    <div class="tyhja_tila"></div>
     
 <footer>
 
