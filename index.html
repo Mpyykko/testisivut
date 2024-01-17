@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="mobiilityylit.css">
 
     <title>Aloitussivu</title>
-
+    <style>
+        #pyorivaKuva {
+                cursor: pointer;
+                position: relative;      
+            }
+    
+            #pyorivaKuva img {
+                width: 300px;
+                transform-origin: center center;
+                margin: 0;
+                padding: 0;
+               
+            }
+        </style>
 </head>
 
 <body>
     
   
-    <style>
-    #pyorivaKuva {
-            cursor: pointer;
-            position: relative;      
-        }
-
-        #pyorivaKuva img {
-            width: 200px; /* Muuta tarpeidesi mukaan */
-            transform-origin: center center; /* Aseta rotaatiopiste kuvan keskelle */
-            margin: 0;
-            padding: 0;
-           
-        }
-    </style>
+    
     
     <nav class="navigointivalikko" >
         <ul>
@@ -46,7 +46,7 @@
     <div class="tyhja_tila"></div>
  
     <div class="keskitetty" id="pyorivaKuva" onclick="toggleRotation()">
-        <img id="kuva" src="Omia kuvia/pyora2.png" alt="Pyörivä kuva">
+        <img id="kuva" src="Omiakuvia/pyora2.png" alt="Pyörivä kuva">
     </div>
 
     <script>

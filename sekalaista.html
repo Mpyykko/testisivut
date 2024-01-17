@@ -44,10 +44,11 @@
 
         <p> Kokeile erilaisia taustakuvia</p>
         <select onchange="vaihdaTaustakuva(this)"> 
-            <option value="Omia kuvia/omatausta.JPG">Oletus</option>
+            <option value="kuvia/valko6.jpg">Oletus</option>
             <option value="kuvia/tausta1.jpg">Blue</option>
             <option value="kuvia/black.png">Black</option>
-            <option value="kuvia/green_smoke.jpg">Green</option>
+            <option value="kuvia/vihr.jpg">Green</option>
+            <option value="kuvia/lila.jpg">Purple</option>
             
         </select>
 
@@ -56,7 +57,7 @@
                 var valittuKuva = valinta.value;
                 document.body.style.backgroundImage = "url('" + valittuKuva + "')";
 
-                if (valittuKuva === "kuvia/black.png") {
+                if (valittuKuva === "kuvia/black.png" || valittuKuva === "kuvia/vihr.jpg" || valittuKuva === "kuvia/lila.jpg" ) {
                   vaihdaTekstinVari("#fff");
                 } 
                 else {
