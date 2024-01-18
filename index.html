@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik"> 
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tyylit.css">
     <link rel="stylesheet" href="mobiilityylit.css">
 
@@ -46,7 +46,7 @@
     <div class="tyhja_tila"></div>
  
     <div class="keskitetty" id="pyorivaKuva" onclick="toggleRotation()">
-        <img id="kuva" src="Omiakuvia/pyora2.png" alt="Pyörivä kuva">
+        <img id="kuva" src="Omiakuvia/pyora4.png" alt="Pyörivä kuva">
     </div>
 
     <script>
@@ -60,7 +60,7 @@
                     rotaatio += 1;
                     document.getElementById("kuva").style.transform = "rotate(" + rotaatio + "deg)";
                 }
-            }, 15);
+            }, 20);
         };
     
         function toggleRotation() {
@@ -69,7 +69,7 @@
                 rotationInterval = setInterval(function () {
                     rotaatio += 1;
                     document.getElementById("kuva").style.transform = "rotate(" + rotaatio + "deg)";
-                }, 15);
+                }, 20);
             }
             rotaatioKaynnissa = !rotaatioKaynnissa;
         }
