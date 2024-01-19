@@ -19,6 +19,8 @@ body {
 
 .keskitetty {
     text-align: center;
+    align-items: center;
+    justify-content: center; 
 }
 
 
@@ -28,7 +30,6 @@ body {
     padding: 20px;
     width: 100%;
     overflow: hidden;
-   
     
 }
 
@@ -36,6 +37,7 @@ body {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        
 }
 
 .navigointivalikko li {
@@ -212,6 +214,19 @@ footer{
     text-align: center;  
     position: bottom;
     width: 100%;
-    margin-top: 400px;
+    margin-top: 300px;
   
+}
+
+.haku{
+    width: 50%;
+    margin: 0 auto;
+    max-height: 200px;
+}
+
+section{
+    max-width: 70%;
+    width: 70%;
+    margin: 20px auto;
+
 }
