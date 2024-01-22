@@ -8,73 +8,70 @@
     <link rel="stylesheet" href="tyylit.css">
     <link rel="stylesheet" href="mobiilityylit.css">
     <title>Sekalaista</title>
-    
-    
 </head>
 
 
 <body>
-    
-    <nav class="navigointivalikko" >
-        <ul>
-            <li><a href=index.html>Etusivu</a></li>
-            <li><a href=linkkeja.html>Linkkejä</a></li>
-            <li><a href=sekalaista.html>Sekalaisia</a></li>
-            <li><a href=kuva.html>Kuvagalleria 1</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navigointivalikko" >
+            <ul>
+                <li><a href=index.html>Etusivu</a></li>
+                <li><a href=linkkeja.html>Linkkejä</a></li>
+                <li><a href=sekalaista.html>Sekalaisia</a></li>
+                <li><a href=kuva.html>Kuvagalleria 1</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
-    
-    <h2 class="keskitetty"> Tänne kaikenlaista muuta</h2>
-    <div class="vali"></div>
-    <div class="keskitetty">
-    
-
-        <p>Painike</p>
-        <button class="nappi" type="button" onclick="tulostaViesti()">Tästä voi painaa!</button>
-        <script>
-            function tulostaViesti() {
-                alert("Tähän joku toiminto?");
-        }
-        </script>
-
-    <div class="vali"></div>
-
-        <p> Kokeile erilaisia taustakuvia</p>
-        <select onchange="vaihdaTaustakuva(this)"> 
-            <option value="kuvia/valko1.jpg">Oletus</option>
-            <option value="kuvia/tausta1.jpg">Blue</option>
-            <option value="kuvia/black.png">Black</option>
-            <option value="kuvia/vihr.jpg">Green</option>
-            <option value="kuvia/lila.jpg">Purple</option>
-            
-        </select>
-
-        <script>
-            function vaihdaTaustakuva(valinta) {
-                var valittuKuva = valinta.value;
-                document.body.style.backgroundImage = "url('" + valittuKuva + "')";
-
-                if (valittuKuva === "kuvia/black.png" || valittuKuva === "kuvia/vihr.jpg" || valittuKuva === "kuvia/lila.jpg" ) {
-                  vaihdaTekstinVari("#fff");
-                } 
-                else {
-                  vaihdaTekstinVari("#000"); 
-              }
-            }
-
-            function vaihdaTekstinVari(vari) {
-              document.body.style.color = vari;
-              document.querySelector('h1').style.color = vari;
-
-            
-            }
-        </script>   
+    <main>
+        <section>
+            <h2> Tänne kaikenlaista muuta</h2>
+        </section>
         
-    </div>
-</div> 
-<div class="tyhja_tila"></div>
+        <section>
+            <p>Painike</p>
+            <button class="nappi" type="button" onclick="tulostaViesti()">Tästä voi painaa!</button>
+            <script>
+                function tulostaViesti() {
+                    alert("Tähän joku toiminto?");
+            }
+            </script>
+        </section>
+        
+        <section>
+            <p> Kokeile erilaisia taustakuvia</p>
+            <select onchange="vaihdaTaustakuva(this)"> 
+                <option value="kuvia/valko1.jpg">Oletus</option>
+                <option value="kuvia/tausta1.jpg">Blue</option>
+                <option value="kuvia/black.png">Black</option>
+                <option value="kuvia/vihr.jpg">Green</option>
+                <option value="kuvia/lila.jpg">Purple</option>
+                
+            </select>
+
+            <script>
+                function vaihdaTaustakuva(valinta) {
+                    var valittuKuva = valinta.value;
+                    document.body.style.backgroundImage = "url('" + valittuKuva + "')";
+
+                    if (valittuKuva === "kuvia/black.png" || valittuKuva === "kuvia/vihr.jpg" || valittuKuva === "kuvia/lila.jpg" ) {
+                    vaihdaTekstinVari("#fff");
+                    } 
+                    else {
+                    vaihdaTekstinVari("#000"); 
+                }
+                }
+
+                function vaihdaTekstinVari(vari) {
+                document.body.style.color = vari;
+                document.querySelector('h1').style.color = vari;
+
+                
+                }
+            </script>   
+        </section>
+
+    </main>
 
     <footer>
         <div class="footer"> 

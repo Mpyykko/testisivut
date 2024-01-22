@@ -13,55 +13,40 @@
 
 <body>
     
-
-
-    <nav class="navigointivalikko" >
-        <ul>
-            <li><a href=index.html>Etusivu</a></li>
-            <li><a href=linkkeja.html>Linkkejä</a></li>
-            <li><a href=sekalaista.html>Sekalaisia</a></li>
-            <li><a href=kuva.html>Kuvagalleria 1</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navigointivalikko" >
+            <ul>
+                <li><a href=index.html>Etusivu</a></li>
+                <li><a href=linkkeja.html>Linkkejä</a></li>
+                <li><a href=sekalaista.html>Sekalaisia</a></li>
+                <li><a href=kuva.html>Kuvagalleria 1</a></li>
+            </ul>
+        </nav>
+    </header>
 
     
-    
-    <div class="keskitetty">
+    <main>
+        <section>
+            <h2>Tänne tulee linkkejä</h2>
+            <p><a href="https://www.google.fi" target="_blank">Tästä</a><span> avautuu google uuteen välilehteen</span></p>
+        </section>
 
-    <h2>Tänne tulee linkkejä</h2></div>
+        <section>
+            <p>Kuvakin voi olla linkki:</p>
+            <a href="https://www.esedu.fi" class="linkki" target="_blank">
+            <img src="kuvia/esedu_logo_koulun_nimella-1-300x111.png" alt="es" width="250"></a>
+        </section>
 
-    <div class="vali"></div>
+        <section>
+            <p>Google-haun voi laittaa myös omille sivuille</p>
+            <form class="haku" action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" name="q" placeholder="Hae Googlesta">
+                <input type="submit" value="Hae">
+            </form>
+        </section>
+   
 
-    <div class="keskitetty">
-    <p>
-        <a href="https://www.google.fi" target="_blank">Tästä</a><span> avautuu google uuteen välilehteen</span>
-    </p>
-    </div>
-    
-
-
-    <div class="vali"></div>
-    
-    <div class="keskitetty">
-        <p>Kuvakin voi olla linkki:</p>
-
-    <a href="https://www.esedu.fi" class="linkki" target="_blank">
-        <img src="kuvia/esedu_logo_koulun_nimella-1-300x111.png" alt="es" width="250"></a>
-    </div>
-
-    <div class="vali"></div>
-
-    <div class="keskitetty" >
-        <p>Google-haun voi laittaa myös omille sivuille</p>
-        <form class="haku" action="https://www.google.com/search" method="GET" target="_blank">
-            <input type="text" name="q" placeholder="Hae Googlesta">
-            <input type="submit" value="Hae">
-        </form>
-    </div>
-    
-        
-    
-    
+    </main>
     <footer>
         <div class="footer"> 
             Copyright &copy; 2024 <span>Mikko Pyykkönen</span>

@@ -26,27 +26,27 @@
 </head>
 
 <body>
-    
-  
-    
-    
-    <nav class="navigointivalikko" >
-        <ul>
-            <li><a href=index.html>Etusivu</a></li>
-            <li><a href=linkkeja.html>Linkkejä</a></li>
-            <li><a href=sekalaista.html>Sekalaisia</a></li>
-            <li><a href=kuva.html>Kuvagalleria 1</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navigointivalikko" >
+            <ul>
+                <li><a href=index.html>Etusivu</a></li>
+                <li><a href=linkkeja.html>Linkkejä</a></li>
+                <li><a href=sekalaista.html>Sekalaisia</a></li>
+                <li><a href=kuva.html>Kuvagalleria 1</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="keskitetty">
-    <h2>Näillä sivuilla olisi tarkoitus opetella nettisivujen tekoa ja testailla kaikenlaisia elementtejä </h2>
-    </div>
-    <div class="vali"></div>
- 
-    <div class="keskitetty" id="pyorivaKuva" onclick="toggleRotation()">
-        <img id="kuva" src="Omiakuvia/pyora4.png" alt="Pyörivä kuva">
-    </div>
+    <main>
+        <section>
+            <h2>Näillä sivuilla olisi tarkoitus opetella nettisivujen tekoa ja testailla kaikenlaisia elementtejä </h2>
+        </section>
+    
+        <section>
+            <div id="pyorivaKuva" onclick="toggleRotation()">
+                <img id="kuva" src="Omiakuvia/pyora4.png" alt="Pyörivä kuva">
+            </div>
+        </section>
 
 
     <script>
@@ -75,7 +75,8 @@
         }
     </script>
 
-
+        
+    </main>
 
     
     <footer>
@@ -83,7 +84,6 @@
             Copyright &copy; 2024 <span>Mikko Pyykkönen</span>
         </div>
     </footer>  
-
 </body>
 
 </html>
